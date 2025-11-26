@@ -1,0 +1,80 @@
+
+:root{
+  --bg: #f3f4f6;
+  --card: #ffffff;
+  --text: #0f172a;
+  --accent: #1e3a8a;
+  --muted: #6b7280;
+  --glass: rgba(255,255,255,0.6);
+}
+[data-theme="dark"]{
+  --bg: #0b1020;
+  --card: #071029;
+  --text: #e6eef8;
+  --accent: #7c3aed;
+  --muted: #9aa4b2;
+  --glass: rgba(255,255,255,0.04);
+}
+*{box-sizing:border-box}
+html,body{height:100%;margin:0;font-family:Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;color:var(--text);background:linear-gradient(180deg,var(--bg),#e9eefb);-webkit-font-smoothing:antialiased;scroll-behavior:smooth}
+a{color:inherit;text-decoration:none}
+.container{max-width:1100px;margin:0 auto;padding:24px}
+
+/* NAVBAR */
+.navbar{backdrop-filter: blur(6px);background:var(--glass);padding:12px 18px;border-radius:12px;margin:18px 0;display:flex;align-items:center;justify-content:space-between;box-shadow:0 6px 20px rgba(2,6,23,0.08)}
+.logo{display:flex;gap:12px;align-items:center;font-weight:700}
+.logo .mark{width:44px;height:44px;border-radius:10px;background:linear-gradient(135deg,var(--accent),#6d28d9);display:flex;align-items:center;justify-content:center;color:white;font-weight:700}
+.navlinks{display:flex;gap:18px;align-items:center}
+.navlinks a{padding:8px 12px;border-radius:8px;font-weight:600;color:var(--muted)}
+.navlinks a.active{background:linear-gradient(90deg,var(--accent),#6d28d9);color:white;box-shadow:0 6px 18px rgba(99,102,241,0.12)}
+
+/* HERO */
+.hero{display:grid;grid-template-columns:1fr 420px;gap:36px;align-items:center;padding:48px 0}
+@media(max-width:880px){.hero{grid-template-columns:1fr;padding:24px 0}}
+.intro h1{font-size:34px;margin:0 0 12px;line-height:1.05}
+.intro p{color:var(--muted);margin-bottom:18px}
+.cta{display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-block;padding:10px 16px;border-radius:10px;font-weight:700;cursor:pointer;border:0}
+.btn-primary{background:linear-gradient(90deg,var(--accent),#6d28d9);color:white;box-shadow:0 10px 25px rgba(99,102,241,0.12)}
+.btn-ghost{background:transparent;border:1px solid rgba(15,23,42,0.06);color:var(--text)}
+
+/* PROFILE CARD */
+.profile-card{background:var(--card);padding:20px;border-radius:14px;box-shadow:0 8px 30px rgba(2,6,23,0.06);text-align:center}
+.profile-card img{width:160px;height:160px;border-radius:50%;object-fit:cover;border:6px solid rgba(255,255,255,0.6);margin-top:-80px;box-shadow:0 10px 30px rgba(2,6,23,0.08)}
+.profile-card h3{margin:12px 0 6px}
+.profile-card p{color:var(--muted)}
+
+/* ABOUT / CARDS */
+.section{padding:40px 0}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:18px}
+@media(max-width:880px){.cards{grid-template-columns:repeat(1,1fr)}}
+.card{background:var(--card);padding:18px;border-radius:12px;box-shadow:0 6px 18px rgba(2,6,23,0.05);transition:transform .35s ease, box-shadow .35s ease}
+.card:hover{transform:translateY(-8px);box-shadow:0 18px 40px rgba(2,6,23,0.08)}
+
+/* GALLERY */
+.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+@media(max-width:880px){.gallery{grid-template-columns:repeat(2,1fr)}}
+.gallery img{width:100%;height:220px;object-fit:cover;border-radius:10px;transition:transform .4s ease;cursor:pointer}
+.gallery img:hover{transform:scale(1.04)}
+
+/* CONTACT */
+.contact-box{background:var(--card);padding:22px;border-radius:12px;box-shadow:0 10px 30px rgba(2,6,23,0.06);max-width:520px;margin:0 auto}
+.form-row{display:flex;gap:12px}
+.form-row input, textarea{width:100%;padding:12px;border-radius:8px;border:1px solid rgba(2,6,23,0.06);background:transparent;color:var(--text);outline:none}
+textarea{min-height:120px;resize:vertical}
+
+/* FOOTER */
+footer.site-footer{margin-top:42px;padding:24px;text-align:center;color:var(--muted)}
+
+/* small helpers */
+.kicker{display:inline-block;padding:6px 10px;background:linear-gradient(90deg,#eef2ff,#ede9fe);border-radius:999px;font-weight:700;color:var(--accent);margin-bottom:12px}
+
+/* animations */
+.fade-up{opacity:0;transform:translateY(12px);animation:fadeUp .7s forwards}
+@keyframes fadeUp{to{opacity:1;transform:none}}
+
+/* dark toggle */
+.theme-toggle{display:inline-flex;align-items:center;gap:8px;padding:6px 8px;border-radius:999px;background:rgba(255,255,255,0.06);cursor:pointer}
+
+/* smooth utility */
+.section-title{display:flex;justify-content:space-between;align-items:center;margin-bottom:16px}

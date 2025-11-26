@@ -1,0 +1,51 @@
+
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Kontak — Muhammad Rafiqi Iqbal</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header class="navbar">
+      <div class="logo"><div class="mark">PK</div><div><div style="font-size:14px;opacity:.9">Profil</div><div style="font-weight:800">Muhammad Rafiqi Iqbal</div></div></div>
+      <nav class="navlinks">
+        <a href="index.html">Home</a>
+        <a href="about.html">Tentang</a>
+        <a href="contact.html" class="active">Kontak</a>
+        <button id="themeToggle" class="theme-toggle">🧑🏻‍🎓</button>
+      </nav>
+    </header>
+
+    <main class="section container">
+      <div class="section-title"><h2>Kontak</h2></div>
+      <div style="display:grid;grid-template-columns:1fr 420px;gap:24px">
+        <div>
+          <form class="contact-box" onsubmit="alert('Ini adalah demo; form tidak mengirim data.'); return false;">
+            <div style="margin-bottom:12px"><label>Nama</label><input type="text" placeholder="Nama lengkap"></div>
+            <div style="margin-bottom:12px"><label>Email</label><input type="email" placeholder="email@contoh.com"></div>
+            <div style="margin-bottom:12px"><label>Pesan</label><textarea placeholder="Tinggalkan pesan..."></textarea></div>
+            <button class="btn btn-primary" type="submit">Kirim</button>
+          </form>
+        </div>
+        <aside class="profile-card">
+          <img src="gambar1.jpeg" alt="Foto Profil">
+          <h3>Muhammad Rafiqi Iqbal</h3>
+          <p style="color:var(--muted)">Email: Rafiqi@gmail.com</p>
+          <p style="color:var(--muted)">Instagram: @rfqii.iqbl</p>
+          <p style="color:var(--muted)">No: 082114494133</p>
+        </aside>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      Dibuat oleh Muhammad Rafiqi Iqbal — XIIB-SAINTEK | Sumber AI: ChatGPT
+    </footer>
+  </div>
+
+  <script src="assets/main.js"></script>
+</body>
+</html>

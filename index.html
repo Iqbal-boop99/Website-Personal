@@ -1,0 +1,81 @@
+
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Profil Pribadi — Muhammad Rafiqi Iqbal</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header class="navbar">
+      <div class="logo"><div class="mark">PK</div><div><div style="font-size:14px;opacity:.9">Profil</div><div style="font-weight:800">Muhammad Rafiqi Iqbal</div></div></div>
+      <nav class="navlinks">
+        <a href="index.html">Home</a>
+        <a href="about.html">Tentang</a>
+        <a href="contact.html">Kontak</a>
+        <button id="themeToggle" class="theme-toggle">🧑🏻‍🎓</button>
+      </nav>
+    </header>
+
+    <main class="hero">
+      <div class="intro fade-up">
+        <div class="kicker">Halo!</div>
+        <h1>Saya <strong>Muhammad Rafiqi Iqbal</strong><br><span style="color:var(--accent)">Siswa • Pembelajar • Kreator</span></h1>
+        <p>Website ini adalah rangkuman profil, keterampilan, dan proyek saya. Dibuat modern, responsif, dan mudah untuk dipelajari.</p>
+        <div class="cta">
+          <a class="btn btn-primary" href="about.html">Lihat Tentang Saya</a>
+          <a class="btn btn-primary" href="contact.html">Contact Me</a>
+        </div>
+
+        <section style="margin-top:28px;">
+          <h3 style="margin-bottom:8px">Skills</h3>
+          <div style="display:flex;gap:8px;flex-wrap:wrap">
+            <div class="card" style="display:inline-block;padding:8px 12px;border-radius:999px;background:linear-gradient(90deg,#eef2ff,#ede9fe);font-weight:700;color:var(--accent)">HTML</div>
+            <div class="card" style="display:inline-block;padding:8px 12px;border-radius:999px;background:linear-gradient(90deg,#fef3c7,#fff7ed);font-weight:700;color:#92400e">CSS</div>
+            <div class="card" style="display:inline-block;padding:8px 12px;border-radius:999px;background:linear-gradient(90deg,#ecfccb,#f0fdf4);font-weight:700;color:#166534">JavaScript</div>
+          </div>
+        </section>
+      </div>
+
+      <aside class="profile-card fade-up" style="text-align:center">
+        <img src="gambar1.jpeg" alt="Foto Profil">
+        <h3>Muhammad Rafiqi Iqbal</h3>
+        <p style="margin:6px 0 12px">Siswa — Muhammad Rafiqi Iqbal • YAPIDH</p>
+        <p class="muted" style="color:var(--muted)"> Halo,saya Muhammad Rafiqi Iqbal kelas 12B-SAINTEK,saya sekolah di SMAIT YAPIDH </p>
+      </aside>
+    </main>
+
+    <section class="section" id="about">
+      <div class="section-title container"><h2>Tentang Saya</h2></div>
+      <div class="container cards">
+        <div class="card">
+          <h4>Siapa Saya</h4>
+          <p style="color:var(--muted)">Saya adalah Muhammad Rafiqi Iqbal, seorang pelajar yang menyukai teknologi dan desain. Saya sedang belajar membuat website dan proyek digital.</p>
+        </div>
+        <div class="card">
+          <h4>Minat</h4>
+          <p style="color:var(--muted)">Desain grafis, pengembangan web, dan game.</p>
+        </div>
+        <div class="card">
+          <h4>Tujuan</h4>
+          <p style="color:var(--muted)">Membangun portofolio yang bisa ditunjukkan ke guru dan teman.</p>
+        </div>
+      </div>
+    
+
+    <footer class="site-footer">
+      Dibuat oleh Muhammad Rafiqi Iqbal — XIIB-SAINTEK | Sumber AI: ChatGPT
+    </footer>
+  </div>
+
+  <!-- modal for gallery -->
+  <div id="modal" style="display:none;position:fixed;inset:0;background:rgba(2,6,23,0.6);align-items:center;justify-content:center;padding:28px;z-index:999">
+    <img id="modalImg" src="" style="max-width:95%;max-height:90%;border-radius:10px;box-shadow:0 18px 50px rgba(2,6,23,0.6)">
+  </div>
+
+  <script src="assets/main.js"></script>
+</body>
+</html>
